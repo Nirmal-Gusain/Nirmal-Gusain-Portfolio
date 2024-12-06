@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'oldEnglish';
+  src: url('./fonts/oldenglishtextmt.woff2') format('woff2'),
+       url('./fonts/oldenglishtextmt.woff2') format('woff'),
+       url('./fonts/oldenglishtextmt.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'mongkrain';
+  src: url('./fonts/mongkrain-mongkrain-regular-400.woff2') format('woff2'),
+       url('./fonts/mongkrain-mongkrain-regular-400.woff2') format('woff'),
+       url('./fonts/mongkrain-mongkrain-regular-400.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'oldEnglish';
+}
+
+nav{
+    display: flex;
+    overflow: hidden;
+    padding: 27px 80px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #144552;
+    color: white;
+}
+.logo h1{
+    font-family: 'mongkrain';
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    position: relative;
+}
+nav ul li{
+    transition: 0.3s all ease;
+    
+}
+nav ul li a{
+    padding: 35px 20px;
+    /* border: 1px solid black; */
+    text-decoration: none;
+    color: white;
+}
+nav ul li:hover{
+    scale: 120%;
+    text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.593);
+}
+nav>a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    transition: 0.3s all ease;
+    color: white;
+    
+}
+nav>a:hover{
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 10px;
+    scale: 110%;
+}
+nav img{
+    position: absolute;
+    height: 90px;
+    top: -20px;
+    right: 20px;
+    transform: rotate(35deg);
+}
+
+.hero{
+    height:85vh;
+    width: 100%;
+    position: relative;
+    background-color: #144552;
+}
+
+.hero-img{
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    position: absolute;
+    height: 500px;
+    width: 400px;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color:rgba(255, 255, 255, 0.46) ;
+    backdrop-filter: blur(10px);
+    
+}
+.hero-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+footer{
+    width: 100%;
+    background-color: #181D27;
+    color: white;
+    padding: 30px;
+    position: relative;
+}
+footer>h2{
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+    font-family: 'mongkrain';
+    text-shadow: 2px 2px 15px rgba(255,255,255,0.6);
+    letter-spacing: 3px;
+}
+footer>p{
+    font-family: 'mongkrain';
+    text-align: center;
+    font-size: 40px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    /* border: 1px solid black; */
+    padding: 20px 0px;
+}
+.contact a img{
+    height: 80px;
+    margin: 20px 0;
+    transition: .7s all ease-out;
+    /* text-shadow: rgba(255, 255, 255, 0.35) 0px 5px 10px; */
+}
+
+.contact a:hover img{
+    filter: drop-shadow(0 0 10px white);
+    transform: rotateY(360deg);
+    
+}
+.arrow {
+      filter: drop-shadow(0 0 10px white);
+    height: 73px;
+    position: absolute;
+    top: 175px;
+    right: 340px;
+    transform: rotate(90deg);
+}
+
+.moreContact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.more{
+    border: 1px solid white;
+    padding: 10px 30px ;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.more i{
+    
+    font-size: 30px;
+}
+.more p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
